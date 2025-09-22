@@ -9,12 +9,12 @@ def Solution(nums,target):
         return left
     else:
         while left <= right:
-            print(f"left:{left} , right:{right} , mid:{ mid}")
+            # print(f"left:{left} , right:{right} , mid:{ mid}")
 
 
 
             mid = left + ( ( right - left ) // 2 )
-            print(f"mid : {mid}")
+            # print(f"mid : {mid}")
 
             if target < nums[mid]:
                 right = mid - 1
