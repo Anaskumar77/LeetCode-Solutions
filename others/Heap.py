@@ -13,3 +13,5 @@ print(minVal)
 print(Arr)
 
 
+
+
