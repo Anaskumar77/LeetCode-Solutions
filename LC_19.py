@@ -31,3 +31,38 @@ class Solution(object):
                 curr.next = curr.next.next
                 break  
         return head
+
+
+
+
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def removeNthFromEnd(self, head, n):
+        """
+        :type head: Optional[ListNode]
+        :type n: int
+        :rtype: Optional[ListNode]
+        """
+        dummy = ListNode(0)
+
+        f = dummy
+        s = dummy
+
+        dummy.next = head
+
+        for i in range(n+1):
+            f = f.next
+
+        
+        while f:
+            s = s.next
+            f = f.next
+        
+        s.next = s.next.next
+            
+        return dummy.next
+        
