@@ -48,7 +48,6 @@ class Solution(object):
         :rtype: Optional[ListNode]
         """
         dummy = ListNode(0)
-
         f = dummy
         s = dummy
 
