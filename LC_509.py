@@ -4,7 +4,6 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-
         memo= {0:0,1:1}
 
         def f(num):
