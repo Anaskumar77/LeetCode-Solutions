@@ -3,7 +3,7 @@ class Solution:
         if n == 1:
             return True
         while n >= 1:
-            n = n /2
+            n = n /2 
             print(n)
             if n == 1:
                 return True
